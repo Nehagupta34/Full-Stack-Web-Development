@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Enter your name</h1>
+    First Name <input type="text"
+    placeholder="Enter First Name"
+    id=firstname>
+    <br>
+    <br>
+    Last Name <input type="text" 
+    placeholder="Enter Last Name"
+    id=lastname>
+    <br>
+    <br>
+    <button onclick="result()">Submit</button>
+    <br>
+    <br>
+    <h1 id="answer"></h1>
+
+    <script>
+        function result() {
+            var field1 = document.getElementById("firstname").value;
+            var field2 = document.getElementById("lastname").value;
+            document.getElementById("answer").innerHTML = "Welcome " + field1 + " " + field2 + " " + "to the Graphic Era!!"
+        }
+    </script>
+</body>
+
+</html>
